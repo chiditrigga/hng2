@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import logo from '../public/img1.svg'
+import Footer from './components/Footer';
 
 
 export default function Home() {
@@ -18,9 +19,9 @@ export default function Home() {
 
   return (
     <main>
-      <div className="flex items-center justify-center min-h-fit py-3 md:py-8 text-white bg-[orange]">
+      <div className="flex items-center justify-center min-h-fit py-3 md:py-8 text-white bg-[#F09A1F]">
             <div className="text-center">
-                <h1 className="text-5xl font-bold">Dreamlla Emporium</h1>
+                <h1 className="text-5xl font-bold">Dreamella Emporium</h1>
                 <p className="text-2xl mt-4">Enhancing confidence levels</p>
             </div>
         </div>
@@ -61,7 +62,9 @@ export default function Home() {
                     </div>
                 </div>
             ))}
+            
         </div>
+        <Footer />
     </main>
   );
 }
