@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import logo from '../public/img1.svg'
+import pagi from '../public/pagi.png'
 import Footer from './components/Footer';
 
 
@@ -55,7 +56,7 @@ export default function Home() {
                             <p className="font-semibold text-lg text-gray-800">{product.price}</p>
                         </div>
                         <div className="px-6 py-4">
-                            <button className="w-full bg-white border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-semibold py-2 px-4 rounded-md">
+                            <button className="w-full bg-white border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white font-semibold py-2 px-4 rounded-lg">
                                 Add to Cart
                             </button>
                         </div>
@@ -63,6 +64,7 @@ export default function Home() {
                 </div>
             ))}
             
+            <Image className='my-5' src={pagi} alt="Logo" width={400} height={400} />
         </div>
         <Footer />
     </main>
