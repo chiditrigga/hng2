@@ -5,13 +5,16 @@ import logo from '../../public/logo.svg'
 import search from '../../public/search.svg'
 import cart from '../../public/cart.svg'
 
+
 const Nav = () => {
   return (
     <nav className="bg-white shadow">
       <div className="container mx-auto flex items-center justify-between px-4 py-2 md:px-10">
+        <Link href="/">
         <div className="flex items-center">
           <Image src={logo} alt="Logo" width={50} height={50} className="md:w-20 md:h-20"/>
         </div>
+        </Link>
         <div className="flex-grow mx-4 flex justify-center">
           <div className="relative w-full max-w-xs md:max-w-md lg:max-w-lg">
             <input
