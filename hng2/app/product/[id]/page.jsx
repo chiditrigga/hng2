@@ -15,10 +15,11 @@ import plus from '@/public/plus.png';
 import minus from '@/public/minus.png';
 import back from '@/public/back.png';
 import Link from 'next/link';
+import img1 from '@/public/img1.svg';
 
 function Post({ params: { id } }) {
   const products = [
-    { id: 1, name: 'Riggs Spray', price: 'N3,500', image: logo },
+    { id: 1, name: 'Riggs Spray', price: 'N3,500', image: img1 },
     { id: 2, name: 'Suger', price: 'N20,000', image: no2 },
     { id: 3, name: '100ml Mousuf', price: 'N17,000', image: no3 },
     { id: 4, name: 'Ophylia', price: 'N16,000', image: no4 },
