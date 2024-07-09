@@ -30,10 +30,11 @@ function Post({ params: { id } }) {
   ];
 
   const product = products.find(product => product.id === parseInt(id));
+  const [quantity, setQuantity] = useState(0); 
 
   if (!product) return <div>Product not found</div>;
 
-  const [quantity, setQuantity] = useState(0);
+
 
   const increment = () => {
     setQuantity(quantity + 1);
