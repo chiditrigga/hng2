@@ -16,7 +16,7 @@ const Nav = () => {
         </div>
         </Link>
         <div className="flex-grow mx-4 flex justify-center">
-          <div className="relative w-full max-w-xs md:max-w-md lg:max-w-lg">
+          <div className="relative flex w-full max-w-xs md:max-w-md lg:max-w-lg">
             <input
               type="text"
               placeholder="Search..."

@@ -33,7 +33,7 @@ function Post({ params: { id } }) {
 
   if (!product) return <div>Product not found</div>;
 
-  const quantity =0;
+  const [quantity, setQuantity] = useState(0);
 
   const increment = () => {
     setQuantity(quantity + 1);
@@ -78,7 +78,7 @@ function Post({ params: { id } }) {
           <div className="flex items-center space-x-2">
             <button
               onClick={decrement}
-              className="border border-[#E8E8E8] text-white font-bold py-2 px-4 rounded"
+              className="border border-[#E8E8E8] text-white font-bold py-5 px-4 rounded"
             >
               <Image width={20} height={20} src={minus} alt='Minus' />
             </button>
@@ -87,7 +87,7 @@ function Post({ params: { id } }) {
             </span>
             <button
               onClick={increment}
-              className="border border-[#E8E8E8] text-white font-bold py-2 px-4 rounded"
+              className="border border-[#E8E8E8] text-white font-bold py-3 px-4 rounded"
             >
               <Image width={20} height={20} src={plus} alt='Plus' />
             </button>
