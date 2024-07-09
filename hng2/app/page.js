@@ -36,20 +36,20 @@ export default function Home() {
         </div>
         <div className="flex items-center justify-center py-8">
   <ul className="flex w-full overflow-x-auto md:overflow-visible px-5 space-x-4 md:space-x-0 md:flex-wrap">
-    <li className="flex-none md:flex-grow text-center border-b-2 w-20 md:w-auto border-black">Item 1</li>
-    <li className="flex-none md:flex-grow text-center w-20 md:w-auto">Item 2</li>
-    <li className="flex-none md:flex-grow text-center w-20 md:w-auto">Item 3</li>
-    <li className="flex-none md:flex-grow text-center w-20 md:w-auto">Item 4</li>
-    <li className="flex-none md:flex-grow text-center w-20 md:w-auto">Item 5</li>
-    <li className="flex-none md:flex-grow text-center w-20 md:w-auto">Item 6</li>
-    <li className="flex-none md:flex-grow text-center w-20 md:w-auto">Item 7</li>
+    <li className="flex-none md:flex-grow text-center border-b-2 w-20 md:w-auto border-black">All</li>
+    <li className="flex-none md:flex-grow text-center w-20 md:w-auto">Mini Perfumes</li>
+    <li className="flex-none md:flex-grow text-center w-20 md:w-auto">Oil Perfumes</li>
+    <li className="flex-none md:flex-grow text-center w-20 md:w-auto">Designers Perfumes</li>
+    <li className="flex-none md:flex-grow text-center w-20 md:w-auto">Arabian Perfumes </li>
+    <li className="flex-none md:flex-grow text-center w-20 md:w-auto">Deodorants</li>
+    <li className="flex-none md:flex-grow text-center w-20 md:w-auto">More</li>
   </ul>
 </div>
 
 
-<div className="md:flex md:flex-wrap justify-center p-4 font-medium">
+<div className=" justify-center p-4 font-medium md:grid md:grid-cols-2 md:gap-2 lg:grid-cols-3 lg:gap-4">
   {products.map(product => (
-    <div key={product.id} className="w-full sm:w-full lg:w-1/3 p-5 md:p-20">
+    <div key={product.id} className="w-full sm:w-full p-5 md:p-14 xl:p-20 bg-[#FEFCFC] rounded-lg mb-4 lg:mb-0">
       <Link href={`/product/${product.id}`} className=''>
         <div className="relative">
           <Image
@@ -73,8 +73,13 @@ export default function Home() {
       </Link>
     </div>
   ))}
-  <Image className="my-5" src={pagi} alt="Logo" width={400} height={400} />
+ 
 </div>
+<div className="flex justify-center my-5 w-full">
+  <Image src={pagi} alt="Logo" width={400} height={400} />
+</div>
+
+
 
        
     </main>
