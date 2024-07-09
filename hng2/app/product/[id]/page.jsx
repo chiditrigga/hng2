@@ -33,7 +33,7 @@ function Post({ params: { id } }) {
 
   if (!product) return <div>Product not found</div>;
 
-  const [quantity, setQuantity] = useState(0);
+  const quantity =0;
 
   const increment = () => {
     setQuantity(quantity + 1);
